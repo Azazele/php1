@@ -1,0 +1,50 @@
+.container{
+	margin: 0 auto;
+	width: 1200px;
+	padding: 5px;
+}
+header{
+	background: #6c75c6;
+}
+header .container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100px;
+}
+.logo img{
+	width: 200px;
+}
+nav li{
+	list-style: none;
+	display: inline-block;
+	margin-right: 20px;
+	font-size: 17px;
+}
+nav li a{
+	text-decoration: none;
+	color: #fff;
+}
+.banner{
+	height: 600px;
+	background: url(/img/bg.png);
+	background-position: center center;
+}
+footer{
+	background: #6c75c6;
+	height: 200px;
+}
+h1, h2{
+	text-align: center;
+}
+.row{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.rows{
+	width: 300px;
+	height: 300px;
+	margin: 20px;
+
+}
