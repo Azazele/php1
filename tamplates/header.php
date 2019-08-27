@@ -18,6 +18,11 @@
 						<ul>
 							<li><span class="active"><a href="/">Домашняя</a></span></li>
 							<li><span><a href="?page=goods">Товары</a></span></li>
+							<li><span><a href="?page=basket">Корзина</a></span></li>
+							<li><span><a href="?page=auth">Личный кабинет</a></span></li>
+							<?php if ($_SESSION['is_auth']) :?>
+							<li><span><a href="?page=logout">Выйти</a></span></li>
+							<?php endif; ?>
 						</ul>
 					</nav>
 				</div>
