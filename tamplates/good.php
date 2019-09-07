@@ -10,7 +10,18 @@ $img = queryGetImageById (dbConnect (), 'goods_images', $good[0]['img']);
 		</div>
 		<div class="right-block">
 			<p><?=$good[0]['description']?></p>
-			<a href="?buy=id<?=$good[0]['id']?>" class="buy">Купить за <?=$good[0]['price']?> руб</a>
+			<p><b><?=$good[0]['price']?> руб</b></p>
+			<?php if (!$_SESSION['is_auth']) :?>
+			<form action="./add_basket.php" method="post">
+				<input type="hidden" name="id_good_to_cookie" value="<?=$good[0]['id']?>">
+				<button type="submit" class="btn btn-primary">Добавить в корзину</button>
+			</form>
+			<?php else :?>
+			<form action="./add_basket.php" method="post">
+				<input type="hidden" name="id_good_to_session" value="<?=$good[0]['id']?>">
+				<button type="submit" class="btn btn-primary">Добавить в корзину</button>
+			</form>
+			<?php endif; ?>
 		</div>
 	</div>
 	<?php include TAMPLATES_DIR . 'comments-tpl.php'?>
