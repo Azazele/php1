@@ -1,10 +1,11 @@
 @import url('./normalize.css');
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
-*{font-family: 'Roboto', sans-serif; font-style: normal;color:#fff;}
+*{font-family: 'Roboto', sans-serif; font-style: normal;color:#000;}
 
 body{
 	width: 1920px;
 	margin: 0 auto;
+	overflow-x:hidden; 
 	
 }
 .yellow{
@@ -104,7 +105,7 @@ header .menu li{
 	display: block;
 	font-weight: 500;
 	color: #131316;
-	width: 87px;
+	padding: 0 15px 0 15px;
 	height: 40px;
 	border: 1px solid #ffe600;
 	text-align: center;
@@ -313,4 +314,63 @@ footer .container{
 
 .images img {
 	width: 200px;
+}
+
+.goods {
+	display: flex;
+  	justify-content: space-between;
+  	flex-wrap: wrap;
+}
+.good {
+	padding: 15px;
+	width: 200px;
+	text-align: center;
+	border: solid #efefef 2px;
+	margin: 15px;
+	border-radius: 10px;
+	-webkit-box-shadow: 3px 8px 22px -6px rgba(0,0,0,0.19);
+	-moz-box-shadow: 3px 8px 22px -6px rgba(0,0,0,0.19);
+	box-shadow: 3px 8px 22px -6px rgba(0,0,0,0.19);
+}
+.good img {
+	width: 160px;
+}
+
+.left-block img{
+	width: 600px;
+}
+
+.good-single {
+	display: flex;
+  	justify-content: space-between;
+  	margin: 10px;
+}
+
+.right-block {
+	width: 400px;
+}
+.left-block {
+	width: 400px;
+}
+.right-block a {
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	padding: 15px;
+	background: #efefef;
+	width: 200px;
+}
+
+.comments{
+	margin: 55px;
+	max-width: 1200px;
+}
+.comments form {
+	margin-top: 50px;
+}
+.comments-btn {
+	margin-top: 5px;
+}
+.media {
+	margin-top: 20px;
 }
